@@ -1,0 +1,81 @@
+@import url("/assets/css/general-sans.css");
+
+:root {
+    /* --bs-primary: 8, 118, 221; */
+    --bs-primary-rgb: 8, 118, 221;
+    /* --bs-secondary: rgb(207, 250, 254); */
+    --bs-secondary-rgb: 207, 250, 254;
+}
+
+button {
+    padding: 10px 16px 10px 16px;
+}
+
+body {
+    font-family: 'GeneralSans-Regular';
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    padding: 80px 20px 80px 20px;
+}
+
+header .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-family: 'GeneralSans-Semibold';
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.block_introduction p{
+    padding-bottom: 40px;
+}
+
+.introduction_mockup {
+    position: relative;
+    margin-top: 88px;
+    z-index: 2;
+
+}
+
+.wraper-mockup-image {
+    position: relative;
+    z-index: 2;
+}
+
+.introduction_mockup::before {
+    content: '';
+    border-radius: 50%;
+    right: -80px;
+    bottom: 100px;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(var(--bs-secondary-rgb));
+    z-index: 1;
+}
+
+.block_features .container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.video_container  {
+    width: 100%;
+}
+
+.video_container img {
+    width: 100%;
+}
+
+.introduction-left,
+.wraper_mockup-image,
+header {
+    position: relative; 
+    z-index: 10;
+}
